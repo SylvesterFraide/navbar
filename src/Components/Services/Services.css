@@ -1,0 +1,12 @@
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 250px 0;
+}
+
+.services h2 {
+  color: #00b4d8;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,12 @@
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 250px 0;
+}
+
+.product h2 {
+  color: #ffafcc;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
