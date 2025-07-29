@@ -1,0 +1,41 @@
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    padding: 20px 10px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.header h1 {
+    color: white;
+    font-weight: 400;
+}
+
+.navbar a {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    background: white ;
+    transition: .3s;
+}
+
+.navbar a:hover:before {
+    width: 100%;
+}
