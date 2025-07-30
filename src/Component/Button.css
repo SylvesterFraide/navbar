@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #588157;
+  --text-color: #ffffff;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
