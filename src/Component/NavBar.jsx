@@ -7,7 +7,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-const Navbar = () => {
+const NavBar = () => {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
@@ -54,6 +54,16 @@ const Navbar = () => {
 
           <li className="nav-item">
             <Link
+              to="/products"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Products
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link
               to="/contact-us"
               className="nav-links"
               onClick={closeMobileMenu}
@@ -78,4 +88,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
