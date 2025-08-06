@@ -11,6 +11,21 @@
   min-height: 100vh;
 }
 
+.design,
+.consulting,
+.development,
+.marketing,
+.contact-us,
+.products,
+.signup,
+.home,
+.signup {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10rem;
+}
+
 /*
 a {
   color: inherit;

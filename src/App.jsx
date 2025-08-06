@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NavBar from "./Component/NavBar";
 import { Consulting } from "./Component/Pages/Consulting";
 import { ContactUs } from "./Component/Pages/ContactUs";
 import { Design } from "./Component/Pages/Design";
@@ -10,6 +9,7 @@ import { Home } from "./Component/Pages/Home";
 import { Marketing } from "./Component/Pages/Marketing";
 import { Products } from "./Component/Pages/Products";
 import { SignUp } from "./Component/Pages/SignUp";
+import NavBar from "./Component/Navbar";
 
 /*
 import { Navbar } from './Components/NavBar/Navbar';
@@ -23,7 +23,9 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      {/* <Navbar /> */}
+      {/* <Navbar />
+      
+      */}
       <Routes>
         {/*
         <Route path="/" element={<Home />} />
@@ -32,13 +34,14 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         */}
 
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/Consulting" element={<Consulting />} />
         <Route path="/Design" element={<Design />} />
         <Route path="/Development" element={<Development />} />
         <Route path="/Marketing" element={<Marketing />} />
+        <Route path="/Contact-Us" element={<ContactUs />} />
         <Route path="/Products" element={<Products />} />
-        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Sign-Up" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   );
