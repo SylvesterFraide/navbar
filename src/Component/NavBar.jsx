@@ -47,7 +47,8 @@ const NavBar = () => {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Services <ArrowDropDownIcon />
+              <span> Services </span>
+              <ArrowDropDownIcon />
             </Link>
             {dropdown && <DropDown />}
           </li>

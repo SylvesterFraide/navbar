@@ -41,6 +41,9 @@
 }
 
 .nav-links {
+  display:flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
